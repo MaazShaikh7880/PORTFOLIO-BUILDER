@@ -5,12 +5,9 @@ import Templatespage from './Pages/Templates';
 import Login from './Pages/Login'
 import Signin from './Pages/Signin';
 import LoginCard from './components/LoginCard.jsx'
-// import BasicInfo from './components/BasicInfo';
+
 import Userdata from './Pages/Userdata';
 import Navbar from './components/Navbar';
-import Template1 from './template1/Template.js';
-import Test from './components/Test.jsx';
-// 
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -21,9 +18,7 @@ function App() {
   };
 
   return (
-    // <div>
-    //   <Test/>
-    // </div>
+    
     <div>
       <Router>
         {isLoggedIn ? (
@@ -33,7 +28,6 @@ function App() {
               <Route path='/' element={<Landingpage />} />
               <Route path='/templates' element={<Templatespage />} />
               <Route path='/userr' element={<Userdata />} />
-              <Route path='/main' element={<Template1 />} />
             </Routes>
           </>
         ) : (
