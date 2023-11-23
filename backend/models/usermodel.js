@@ -18,3 +18,5 @@ const usermodel = mongoose.Schema(
 )
 
 export const UserData = mongoose.model('User',usermodel) 
+
+// /Users/nishantdev/PORTFOLIO-BUILDER/backend

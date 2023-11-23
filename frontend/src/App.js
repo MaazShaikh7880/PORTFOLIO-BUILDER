@@ -2,13 +2,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Landingpage from './Pages/Landingpage';
 import Templatespage from './Pages/Templates';
-import Login from './Pages/Login'
 import Signin from './Pages/Signin';
 import LoginCard from './components/LoginCard.jsx'
 
 import Userdata from './Pages/Userdata';
 import Navbar from './components/Navbar';
-
+import Template1 from './components/Template1.jsx';
+import Footer from './components/Footer.jsx';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -28,7 +28,9 @@ function App() {
               <Route path='/' element={<Landingpage />} />
               <Route path='/templates' element={<Templatespage />} />
               <Route path='/userr' element={<Userdata />} />
+              <Route path='/template1' element={<Template1/>}/>
             </Routes>
+            <Footer/>
           </>
         ) : (
           <Routes>

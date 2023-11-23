@@ -9,12 +9,12 @@ import {
   export function BackgroundBlogCard() {
     return (
       <Card
-        shadow={false}
-        className="relative grid h-[40rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center"
+        shadow={true}
+        className="relative grid h-[30rem] w-full max-w-[50rem] items-end justify-center overflow-hidden text-center"
       >
         <CardHeader
           floated={false}
-          shadow={false}
+          shadow={true}
           color="transparent"
           className="absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] bg-cover bg-center"
         >
