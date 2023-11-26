@@ -29,6 +29,7 @@ const Hero = () => {
     }
     const handleclicked = () => {
         setshow(true)
+        setmorefileds(1)
     }
     const handleClose = () => {
         setshow(false)
